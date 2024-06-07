@@ -16,14 +16,14 @@ https://crypto-avatar.vercel.app/:string
 
 You will receive a `png` image with a size of 120\*120px (default size)
 
-![Example Avatar](https://crypto-avatar.vercel.app/example)
+![Example Avatar](https://crypto-avatar.vercel.app/avatar)
 
 ### Custom Sizing
 
-You can pass in the `size` query parameter to get a custom size:
+You can pass in a `size` query parameter to get the size you want:
 
 ```
 https://crypto-avatar.vercel.app/example?size=30
 ```
 
-![Example Avatar with custom size](https://crypto-avatar.vercel.app/example?size=30)
+![Example Avatar with custom size](https://crypto-avatar.vercel.app/avatar?size=30)
