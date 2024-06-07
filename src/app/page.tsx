@@ -10,7 +10,7 @@ export default function Home() {
       <Suspense fallback={<Skeleton className="rounded-md" style={{ width: 250, height: 250 }} />}>
         <Avatar />
       </Suspense>
-      <h1 className="text-5xl md:text-7xl font-semibold">Based Avatar<span className="text-blue-600">.</span></h1>
+      <h1 className="text-5xl md:text-7xl font-semibold">Crypto Avatar<span className="text-blue-600">.</span></h1>
     </main>
   );
 }
