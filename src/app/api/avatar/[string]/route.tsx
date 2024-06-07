@@ -16,12 +16,13 @@ export async function GET(request: NextRequest,{ params }: { params: { string: s
   const random = pickRandomCryptoPunkNumber(string);
 
   // Construct image URL source string
-  const src = new URL(`https://www.larvalabs.com/public/images/cryptopunks/punk${random}.png`).toString();
+  const src = `https://cryptopunks.app/cryptopunks/cryptopunk${random}.png`;
 
 
   return new ImageResponse(
     (
-      <Image
+      // eslint-disable-next-line @next/next/no-img-element
+      <img
         src={src}
         alt="Cryptopunk"
         width={size}
