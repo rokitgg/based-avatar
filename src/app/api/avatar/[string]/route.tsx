@@ -16,7 +16,7 @@ export async function GET(request: NextRequest,{ params }: { params: { string: s
   const random = pickRandomCryptoPunkNumber(string);
 
   // Construct image URL source string
-  const src = `https://cryptopunks.app/cryptopunks/cryptopunk${random}.png`;
+  const src = new URL(`https://cryptopunks.app/cryptopunks/cryptopunk${random}.png`).toString();
 
 
   return new ImageResponse(
